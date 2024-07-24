@@ -172,6 +172,104 @@ public class Program3 {
     
 }
 */
+/*
+ import java.util.Scanner;
+import java.util.*;
+
+public class Practiceque{
+	public static void main(String args[]){
+		/*int year = 2005;
+		if(year%4==0){
+			System.out.println("Year is leap Year");
+		}
+			else{
+				System.out.println("Year is not Leap Year");
+			}*/
+			/*int a ,b , c;
+			Scanner scnner = new Scanner(System.in);  
+ 
+			System.out.println("Enter the first number:");  
+			a = scnner.nextInt();  
+			System.out.println("Enter the second number:");  
+			b = scnner.nextInt();  
+			System.out.println("Enter the third number:");  
+			c = scnner.nextInt();  
+			if(a>=b && a>=c){
+				System.out.println(a+ "is greater");
+			}else if(b>=a && b>=c){
+				System.out.println(b +"is greater");
+			}
+			else{
+				System.out.println(c+ "is greater");
+			}*/
+			
+			//Sum of all even Numbers.
+			/*int sum=0;
+			for(int i=1;i<=100;i++){
+				if(i%2==0){
+					//System.out.println(i);
+					sum+=i;
+				}
+			}
+			System.out.println("Sum of all even numbers:"+sum*/
+			
+			//String palindrome
+			/*Scanner sc = new Scanner(System.in);
+			System.out.println("Enter a string");
+			String str = sc.nextLine();
+			//String str;
+			String rev="";
+			for(int i = str.length()-1; i>=0;i-- )
+				rev =  rev +str.charAt(i);
+			if(str.equals(rev))
+				System.out.println(str +" is  Palindrome");
+			else
+				System.out.println(str +"  is not palindrome");*/
+		
+	//reverse array
+	/*int arr[]= new int []{2,4,5,6,7,8};
+	for(int i=0;i<arr.length;i++){
+		System.out.println(arr[i]);
+	}
+	System.out.println("***Reverse array***");
+	for(int i= arr.length-1;i>=0;i--){
+		System.out.println(arr[i]);
+	*/
+	
+	
+	//Equal elemnet from array
+	/*int arr1[]= new int [] {2,4,5,6};
+	int arr2[]=new int [] {2,3,8,6};
+	for(int i=0;i<arr1.length;i++)
+	{
+		for(int j=0;j<arr2.length;j++)
+		{
+			if(arr1[i]==arr2[j])
+				System.out.println(arr1[i]);
+			}
+			
+		}
+
+
+		int radius=5;
+		double pi= 3.14 , area;
+		area= pi* radius*radius;
+		System.out.println(area);
+		int sum=0;
+		int arr1[]= new int[]  {2,4,5,6};
+		for(int i=0;i<arr1.length;i++){
+			//System.out.println(arr1[i]);
+		
+			sum+=arr1[i];
+		}
+		
+			System.out.println(sum);
+			
+		}
+		
+		
+	}*/
+
     
 }
 
