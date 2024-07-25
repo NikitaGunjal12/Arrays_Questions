@@ -103,7 +103,7 @@ public static void main(String[]args){
  */
 
  /*
-  /*PROGRAM-2
+  /*Example: 4
  * Given an integer n, print the first n rows of pascal's triangle.
  * in pascal's triangle each no of is the sum of two numbers directly above it as show 
  * INPUT: n=5
@@ -137,7 +137,7 @@ public static void main(String[]args){
     }*/
 
     /*
-    /*PROGRAM-2
+    /*Example -5
  * Given an integer n, print the first n rows of pascal's triangle.
  * in pascal's triangle each no of is the sum of two numbers directly above it as show 
  * INPUT: n=5
@@ -270,6 +270,121 @@ public class Practiceque{
 		
 	}*/
 
+//Example: 6
+/*Pairs Of Arrays:
+
+ public class PairsOfArrays {
+    public static void PrintPairs(int nums[]){
+        int tp=0;
+        for(int i=0;i<nums.length;i++){
+            int curr = nums[i];
+            for(int j=i+1; j<nums.length;j++){
+                System.out.print("(" +curr +"," + nums[j]+ ")");
+                tp++;
+
+            }
+            System.out.println();
+
+        }
+        System.out.println("Total Numbers Of Pairs:"+tp);
+    }
+    public static void main(String[]args){
+        int nums[] ={2,4,6,8,10};
+        PrintPairs(nums);
+
+    }
+}*/
+/*Example :7
+Print SubArrays
+
+public class PrintSubArrays {
+    public static void printsubarray(int nums[]){
+        for(int i=0; i<nums.length;i++){
+            int start = i;
+            for(int j=i;j<nums.length;j++){
+                int end =j;
+                for(int k=start; k<=end;k++){
+                    System.out.print(nums[k]+" ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[]args){
+        int nums[] ={2,4,6,8,10};
+        printsubarray(nums);
+
+    }
+    
+}
+*/
+/*
+ Example :8
+ public class ReverseArray {
+    public static void reverrseArrays(int nums[]){
+        int first =0;
+        int last =nums.length-1;
+        while(first<last){
+            int temp = nums[last];
+            nums[last] = nums[first];
+            nums[first]= temp;
+
+            first++;
+            last--;
+        }
+    }
+    public static void main(String[]args){
+        int nums[] ={5,3,2,1};
+        reverrseArrays(nums);
+        for(int i=0; i<nums.length;i++){
+            System.out.print(nums[i]+ " ");
+        }
+        System.out.println();
+
+    }
+    
+}
+*/
+/*Example :9
+Trapping RainWater
+
+public class TrappedRainWater {
+    public static int TrappedWater(int height[]){
+        int n = height.length;
+        //Calculate the left Max_Boundary Array
+        int leftMax[] = new int [n];
+        leftMax[0] = height[0];
+        for(int i=1;i<n;i++){
+            leftMax[i]=Math.max(height[i],leftMax[i-1]);
+        }
+        //Calculate the Right Max_Boundary Array
+        int rightMax[] = new int [n];
+        rightMax[n-1] = height[n-1];
+        for(int i = n-2;i>=0;i--){
+            rightMax[i]= Math.max(height[i],rightMax[i+1]);
+        }
+        int trappedWater = 0;
+        //loop
+        for(int i=0;i<n;i++){
+            //waterLevel = min(leftmaxBound , rightmaxBound)
+            int waterlevel = Math.min(leftMax[i],rightMax[i]);
+            
+            //calculate Trapped Water = waterlevel-height
+            trappedWater += waterlevel - height[i];
+            
+        }
+        return trappedWater;
+    }
+    public static void main(String[]args){
+        int height[] = {4,2,0,6,3,2,5};
+        System.out.println("Total Trapped Water in the Boundaries:" +TrappedWater(height));
+    }
+    
+}
+
+ 
+ */
     
 }
 
