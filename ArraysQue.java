@@ -103,7 +103,7 @@ public static void main(String[]args){
  */
 
  /*
-  /*PROGRAM-2
+  /*EXAMPLE:4
  * Given an integer n, print the first n rows of pascal's triangle.
  * in pascal's triangle each no of is the sum of two numbers directly above it as show 
  * INPUT: n=5
@@ -113,7 +113,7 @@ public static void main(String[]args){
  * 1 2 1
  * 1 3 3 1
  * 1 4 6 4 1
- */
+ 
 public class Program3 {
     public static void main(String[]args){
         int n =5;
@@ -136,7 +136,45 @@ public class Program3 {
         }
     }
     
-}
+}*/
+
+/*
+ EXAMPLE:5
+ Find Maximum SubArray from Array
+ public class MaxSubArraySum {
+    public static void maxSubArraySum(int nums[]){
+        int maxSum= Integer.MIN_VALUE;
+            for(int i=0; i<nums.length;i++){
+                int start = i;
+                for(int j=i;j<nums.length;j++){
+                    int end =j;
+                    int currSum=0;
+                    for(int k=start; k<=end;k++){
+                        //System.out.print(nums[k]+" ");
+                        currSum+=nums[k];
+                    }
+                    System.out.println(currSum);
+                    if(maxSum < currSum){
+                        maxSum = currSum;
+                    }
+                    
+                }
+                
+            }
+            System.out.println("maximum sum=" + maxSum);
+        }
+        public static void main(String[]args){
+            int nums[] ={2,4,6,8,10};
+           maxSubArraySum(nums);
+    
+        }
+        
+    }
+    
+    
+
+
+ */
 
   
 }
