@@ -173,6 +173,7 @@ public class Program3 {
  */
 
  /*EXAMPLE:6
+ Pair Of Array Elements
  public class PairsOfArrays {
     public static void PrintPairs(int nums[]){
         int tp=0;
