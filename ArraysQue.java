@@ -195,9 +195,31 @@ public class Program3 {
 
     }
 }
+*/
+/*
+ Example :7
+ Fibonacci Number
+ public class Fibonaccino{
+	public static void main(String[]args){
+		int a =0 ;
+		int b =1;
+		int num=15;
+		
+		System.out.print(a + " " +b+ " " );
+		
+		int nextitem;
+		for(int i=2;i<=num; i++){
+			nextitem= a+b;
+			a=b;
+			b= nextitem;
+			System.out.print(nextitem+ " ");
+			
+		}
+		
+	}
+}
 
-
-  */
+ */
 
   
 
