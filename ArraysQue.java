@@ -222,6 +222,7 @@ public class Program3 {
  */
 /*
  Example:8
+ Armstrong Number
  import java.util.Scanner;
 public class ArmstrongNo{
 	public static void main(String args[]){
