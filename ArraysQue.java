@@ -261,9 +261,46 @@ public class LeapYear{
 			System.out.println("Year is Not Leap");
 		}
 	}
-}
+}			
+ */
+/*
+ Example:10
+ /*PROGRAM-1
+Given an integer  array nums sorted in non-decreasing order,
+remove the duplicates in  place such that unique element appears only once
+return k after placing the final result in the first k slot of nums.
+Input: nums = [0,1,1,1,2,2,3]
+Output:4
 
-			
+public class Removedupno {
+    public static void main(String[]args){
+        int nums[] = new int[7];
+        nums[0]=0;
+        nums[1]=1;
+        nums[2]=1;
+        nums[3]=1;
+        nums[4]=2;
+        nums[5]=2;
+        nums[6]=3;
+
+        System.out.println(mergeSortedArray(nums));
+
+    }
+    public static int mergeSortedArray(int[]nums){
+        int i=0;
+        for(int j=1; j<nums.length;j++){
+            if(nums[i]<nums[j]){
+                int temp = nums[i+1];
+                nums[i+1]=nums[j];
+                nums[j]=temp;
+                i++;
+            }
+        }
+        return i+1;
+
+    }
+    
+}
  */
 
   
